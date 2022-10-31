@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+.main-container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5em;
+}
+
+.logo-container {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.cart-is-not-empty {
+  position: relative;
+}
+
+.text-container {
+  display: flex;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-text {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  margin: 0;
+  margin-right: 1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #1d1f22;
+  padding-bottom: 1em;
+}
+
+.currency-div {
+  display: flex;
+  margin-right: 1.5em;
+}
+
+.cart-icon {
+  width: 1.2em;
+  height: 1.2em;
+  cursor: pointer;
+}
+
+.dollar-icon {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  margin: 0;
+}
+.arrow {
+  width: 0.6em;
+  margin-left: 0.5em;
+}
+
+.dollar-icon,
+.arrow:hover {
+  cursor: pointer;
+}
+
+.drop-down {
+  position: absolute;
+  background-color: #ffffff;
+  top: 4em;
+  right: 4em;
+  padding: 0.5em 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.currency {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin: 0.5em 0;
+}
+
+.currency:hover {
+  cursor: pointer;
+  background-color: #eeeeee;
+}
+
+.cart-quantity {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: -0.8em;
+  left: 1em;
+  background-color: #1d1f22;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 0.6rem;
+  padding: 0.3em;
+  border-radius: 50%;
+  width: 12px;
+}
+
+.cart-drop-down {
+  top: 1.8em;
+  right: 0;
+  z-index: 2;
+  position: absolute;
+  background-color: #ffffff;
+  padding: 0.5em 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.bag-text {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.item-quantity-text {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 0;
+  margin-left: 0.5em;
+}
+
+.total-price-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+}
+
+.total {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.drop-down-btn-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+  padding-bottom: 1em;
+}
+
+.bag-btn,
+.check-btn {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.8rem;
+  width: 10em;
+  height: 2.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  outline: 0;
+  cursor: pointer;
+}
+
+.bag-btn {
+  border: 1px solid #1d1f22;
+  background-color: #ffffff;
+  color: #1d1f22;
+}
+
+.bag-btn:hover {
+  background-color: #1d1f22;
+  border: none;
+  color: #ffffff;
+  transition: 250ms;
+}
+
+.check-btn {
+  border: none;
+  background-color: #5ece7b;
+  color: #ffffff;
+}
+
+.check-btn:hover {
+  border: 1px solid #5ece7b;
+  background-color: #ffffff;
+  color: #5ece7b;
+  transition: 250ms;
+}
+
+@media (min-width: 1700px) {
+  .nav-text {
+    font-size: 1.2rem;
+  }
+  .dollar-icon {
+    font-size: 1.5rem;
+  }
+  .drop-down {
+    top: 5em;
+    right: 5em;
+  }
+  .arrow {
+    width: 0.7em;
+    margin-left: 0.5em;
+  }
+  .currency {
+    font-size: 1.2rem;
+  }
+  .cart-icon {
+    width: 1.4em;
+    height: 1.4em;
+  }
+  .cart-quantity {
+    font-size: 0.7rem;
+  }
+  .cart-drop-down {
+    top: 2.2em;
+  }
+}
+
+@media (min-width: 1920px) {
+  .nav-text {
+    font-size: 1.3rem;
+  }
+  .dollar-icon {
+    font-size: 1.6rem;
+  }
+  .currency {
+    font-size: 1.3rem;
+  }
+  .cart-icon {
+    width: 1.5em;
+    height: 1.5em;
+  }
+  .cart-quantity {
+    font-size: 0.8rem;
+  }
+  .cart-drop-down {
+    top: 2.4em;
+  }
+}
+
+@media (min-width: 2000px) {
+  .main-container {
+    margin-top: 2em;
+    width: 85%;
+  }
+  .nav-text {
+    font-size: 1.4rem;
+  }
+  .dollar-icon {
+    font-size: 1.7rem;
+  }
+  .drop-down {
+    right: 9em;
+  }
+  .currency {
+    font-size: 1.4rem;
+  }
+  .cart-icon {
+    width: 1.6em;
+    height: 1.6em;
+  }
+  .logo {
+    width: 3em;
+  }
+  .cart-quantity {
+    font-size: 0.9rem;
+    width: 16px;
+  }
+  .total {
+    font-size: 1.2rem;
+  }
+  .bag-btn,
+  .check-btn {
+    font-size: 1rem;
+  }
+  .drop-down-btn-container {
+    padding-bottom: 2em;
+  }
+  .cart-drop-down {
+    top: 2.5em;
+  }
+}
+
+@media (min-width: 2200px) {
+  .nav-text {
+    font-size: 1.9rem;
+  }
+  .dollar-icon {
+    font-size: 2.2rem;
+  }
+  .arrow {
+    width: 1.2em;
+  }
+  .drop-down {
+    right: 11em;
+    top: 6em;
+  }
+  .currency {
+    font-size: 2rem;
+  }
+  .cart-icon {
+    width: 2em;
+    height: 2em;
+  }
+  .logo {
+    width: 5em;
+  }
+  .cart-quantity {
+    font-size: 1.2rem;
+    width: 20px;
+  }
+  .total {
+    font-size: 1.4rem;
+  }
+  .bag-btn,
+  .check-btn {
+    font-size: 1.2rem;
+  }
+  .cart-drop-down {
+    top: 3.2em;
+  }
+}

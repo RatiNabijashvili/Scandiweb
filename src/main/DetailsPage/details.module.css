@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+h1,
+p,
+span,
+li {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  color: #1d1f22;
+}
+
+.main-container {
+  display: flex;
+}
+
+.img-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-container {
+  margin-left: 5em;
+}
+
+.img {
+  width: 8em;
+  margin-bottom: 2em;
+}
+
+.img:hover {
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.content-container {
+  margin-left: 2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-img {
+  width: 35em;
+}
+
+.brand {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin: 0;
+  color: #1d1f22;
+}
+
+.name {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  margin: 0.5rem 0;
+  color: #1d1f22;
+}
+
+.value-container {
+  margin-top: 2em;
+}
+
+.text {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  color: #1d1f22;
+}
+
+.value {
+  font-family: 'Raleway', sans-serif;
+  border: 1px solid #1d1f22;
+  color: #1d1f22;
+  font-weight: 700;
+  margin-right: 1em;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5em;
+  width: 3.5em;
+  transition: 250ms;
+}
+
+.value:hover {
+  cursor: pointer;
+  background-color: #1d1f22;
+  color: #ffffff;
+}
+
+.current-value {
+  background-color: #1d1f22;
+  color: #ffffff;
+}
+
+.color-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.color {
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 0.5em;
+  transition: 250ms;
+}
+
+.color:hover {
+  cursor: pointer;
+  box-shadow: inset 0 0 0 1px #5ece7b;
+}
+
+.current-color {
+  box-shadow: inset 0 0 0 1px #5ece7b;
+}
+
+.price-container {
+  margin-top: 2em;
+}
+
+.price {
+  font-family: 'Raleway', sans-serif;
+  color: #1d1f22;
+  font-size: 1.2rem;
+}
+
+.description-container {
+  margin-top: 2em;
+}
+
+.cart-button {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  border: none;
+  background-color: #5ece7b;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.8em 4em;
+}
+
+.cart-button:hover {
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #5ece7b;
+  box-shadow: inset 0 0 0 1px;
+  transition: 250ms;
+}
+
+.description {
+  margin-top: 2em;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  color: #1d1f22;
+}
+
+.item-list {
+  display: flex;
+}
+
+@media (min-width: 1700px) {
+  h1,
+  p,
+  span,
+  li {
+    font-size: 1.2rem;
+  }
+  .img {
+    width: 10em;
+  }
+  .content-img {
+    width: 37em;
+  }
+  .brand {
+    font-size: 1.7rem;
+  }
+  .name {
+    font-size: 1.5rem;
+  }
+  .text {
+    font-size: 1.4rem;
+  }
+  .value {
+    font-size: 1.1rem;
+  }
+  .price {
+    font-size: 1.4rem;
+  }
+  .cart-button {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  h1,
+  p,
+  span,
+  li {
+    font-size: 1.4rem;
+  }
+  .img {
+    width: 10em;
+  }
+  .content-img {
+    width: 39em;
+  }
+  .brand {
+    font-size: 1.9rem;
+  }
+  .name {
+    font-size: 1.7rem;
+  }
+  .text {
+    font-size: 1.6rem;
+  }
+  .value {
+    font-size: 1.3rem;
+  }
+  .price {
+    font-size: 1.6rem;
+  }
+  .cart-button {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 2000px) {
+  .main-container {
+    margin-top: 5em;
+  }
+  h1,
+  p,
+  span,
+  li {
+    font-size: 1.6rem;
+  }
+  .img {
+    width: 12em;
+  }
+  .content-img {
+    width: 41em;
+  }
+  .brand {
+    font-size: 2.1rem;
+  }
+  .name {
+    font-size: 1.9rem;
+  }
+  .text {
+    font-size: 1.7rem;
+  }
+  .value {
+    font-size: 1.5rem;
+  }
+  .price {
+    font-size: 1.7rem;
+  }
+  .cart-button {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 2200px) {
+  h1,
+  p,
+  span,
+  li {
+    font-size: 2.1rem;
+  }
+  .img {
+    width: 16em;
+  }
+  .content-img {
+    width: 50em;
+  }
+  .brand {
+    font-size: 2.6rem;
+  }
+  .name {
+    font-size: 2.4rem;
+  }
+  .text {
+    font-size: 2.2rem;
+  }
+  .value {
+    font-size: 1.8rem;
+  }
+  .price {
+    font-size: 2.2rem;
+  }
+  .cart-button {
+    font-size: 2rem;
+  }
+}

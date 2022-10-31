@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
+.content-container {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 4em;
+}
+
+.drop-down-color {
+  position: absolute;
+  display: none;
+  width: 98.8vw;
+  height: 260vh;
+  opacity: 0.3;
+  background-color: #393748;
+}
+
+@media (min-width: 2000px) {
+  .content-container {
+    width: 85%;
+  }
+}

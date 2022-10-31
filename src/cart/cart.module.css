@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
+.cart-text {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #1d1f22;
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 3em;
+  padding-bottom: 2em;
+}
+
+.text {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #1d1f22;
+}
+
+.btn {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #5ece7b;
+  outline: 0;
+  border: 0;
+  width: 15em;
+  height: 3em;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.btn:hover {
+  border: 1px solid #5ece7b;
+  color: #5ece7b;
+  background-color: #ffffff;
+  transition: 250ms;
+}
+
+@media (min-width: 1700px) {
+  .text {
+    font-size: 1.3rem;
+  }
+  .btn {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 1900px) {
+  .text {
+    font-size: 1.4rem;
+  }
+  .btn {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 2000px) {
+  .text {
+    font-size: 1.6rem;
+  }
+  .btn {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 2200px) {
+  .text {
+    font-size: 1.9rem;
+  }
+  .btn {
+    font-size: 1.3rem;
+  }
+}
